@@ -23,8 +23,16 @@ public interface StudentArrayOperation {
 	 * 
 	 * @throws IllegalArgumentException
 	 */
-	void setStudents(Student[] students);
-	
+	void setStudents(Student[] students){
+		try
+		{
+			if(students == null) throws IllegalArgumentException {
+		students
+		}catch(Exception e){
+		 System.out.println("exception raised is ":+e;);     
+			  }
+	}
+	}
 
 	/**
 	 * if index lower than 0 or index higher/equal students.length method should
@@ -32,7 +40,14 @@ public interface StudentArrayOperation {
 	 *
 	 * @param index
 	 */
-	Student getStudent(int index);
+	Student getStudent(int index){
+	try{
+		if(index < 0||index > = students.length) throws IllegalArgumentException {
+	          	this.index=index;
+		}catch(exception e){
+			System.out.println("exception caught":+e);
+		}
+	}
 
 	
 	/**
@@ -78,7 +93,15 @@ public interface StudentArrayOperation {
 	 * 
 	 * @throws IllegalArgumentException
 	 */
-	void addFirst(Student student);
+	void addFirst(Student student){
+		try
+		{
+			if(student == null) throws IllegalArgumentException {
+		this.students=students;
+		}catch(Exception e){
+		 System.out.println("exception raised is ":+e;);     
+			  }
+	}
 	
 
 	/**
